@@ -85,7 +85,7 @@ public class Airport {
     public Airport sortByMaxDistance() {
         Collections.sort(planes, new Comparator<Plane>() {
             public int compare(Plane firstPlane, Plane secondPlane) {
-                return firstPlane.Get_Max_Flight_Distance() - secondPlane.Get_Max_Flight_Distance();
+                return firstPlane.getMaxFlightDistance() - secondPlane.getMaxFlightDistance();
             }
         });
         return this;
@@ -94,7 +94,7 @@ public class Airport {
     public Airport sortByMaxSpeed() {
         Collections.sort(planes, new Comparator<Plane>() {
             public int compare(Plane firstPlane, Plane secondPlane) {
-                return firstPlane.getMS() - secondPlane.getMS();
+                return firstPlane.getMaxSpeed() - secondPlane.getMaxSpeed();
             }
         });
         return this;
