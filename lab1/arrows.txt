@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 =======
 The ship glides gently on the waves
+<<<<<<< HEAD
 As day turns into night
 >>>>>>> d08fe08 (Update arrows.txt)
 One thousand burning arrows
@@ -10,3 +11,6 @@ Fill the starlit sky
 The ship glides gently on the waves
 As day turns into night
 >>>>>>> 1111ac0 (Create arrows.txt)
+=======
+As day turns into night 
+>>>>>>> dcc7685 (Update arrows.txt)
