@@ -3,6 +3,7 @@
 =======
 The ship glides gently on the waves
 <<<<<<< HEAD
+<<<<<<< HEAD
 As day turns into night
 >>>>>>> d08fe08 (Update arrows.txt)
 One thousand burning arrows
@@ -14,3 +15,8 @@ As day turns into night
 =======
 As day turns into night 
 >>>>>>> dcc7685 (Update arrows.txt)
+=======
+As day turns into night 
+The ship glides gently on the waves
+As day turns into night
+>>>>>>> 55697c3 (Update arrows.txt)
