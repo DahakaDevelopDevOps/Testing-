@@ -1,10 +1,7 @@
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-
-public class CalculatorTests {
+public class CalculatorTest {
     @DataProvider(name = "testSumData")
     public Object[][] createSumData() {
         return new Object[][] {

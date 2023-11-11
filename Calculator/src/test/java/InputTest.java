@@ -3,7 +3,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-public class TestInput {
+public class InputTest {
 
     @DataProvider(name = "flagVariants")
     public Object[][] getData() {

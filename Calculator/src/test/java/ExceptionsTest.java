@@ -3,7 +3,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-public class Exceptions {
+public class ExceptionsTest {
     @DataProvider(name = "testExceptionData")
     public Object[][] createExceptionData() {
         return new Object[][]{
@@ -98,6 +98,21 @@ public class Exceptions {
     @Test(expectedExceptions = ArithmeticException.class)
     public void testSubtractOverflow() {
         int result = Calculator.subtract(Integer.MAX_VALUE, -1);
+    }
+
+    @Test(expectedExceptions = ArithmeticException.class)
+    public void testMulOverflow() {
+        int result = Calculator.multiply(-45000000, -9000);
+    }
+
+    @Test(expectedExceptions = ArithmeticException.class)
+    public void testSumOverflow() {
+        int result = Calculator.add(Integer.MAX_VALUE, 1);
+    }
+
+    @Test(expectedExceptions = ArithmeticException.class)
+    public void testDivOverflow() {
+        int result = Calculator.divide(1, 0);
     }
 
 }

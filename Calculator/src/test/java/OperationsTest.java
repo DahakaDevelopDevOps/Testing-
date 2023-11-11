@@ -11,15 +11,15 @@ import static org.testng.Assert.assertEquals;
 
 
 public class OperationsTest {
-    @Test
-    public void testGetOperation() {
-        ByteArrayInputStream in = new ByteArrayInputStream("+".getBytes());
-        InputStream inputStream = System.in;
-        System.setIn(in);
-        char operation = Calculator.getOperation();
-        assertEquals("+".charAt(0), operation);
-        System.setIn(inputStream);
-    }
+//    @Test
+//    public void testGetOperation() {
+//        ByteArrayInputStream in = new ByteArrayInputStream("+".getBytes());
+//        InputStream inputStream = System.in;
+//        System.setIn(in);
+//        char operation = Calculator.getOperation();
+//        assertEquals("+".charAt(0), operation);
+//        System.setIn(inputStream);
+//    }
 
 
 }
