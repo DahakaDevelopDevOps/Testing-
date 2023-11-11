@@ -2,3 +2,4 @@
 *.db
 target/
 bin/
+!target/site/jacoco/index.html
