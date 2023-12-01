@@ -22,6 +22,7 @@ public class MainSynevoPage {
     }
 
     public SynevoBranchPage chooseMenuOption() {
+        driver.manage().window().fullscreen();
         navigationButtonToMainInformationPage.click();
         return new SynevoBranchPage();
     }
