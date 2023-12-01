@@ -11,6 +11,7 @@ public class SynevoTest {
     @BeforeMethod(alwaysRun = true)
     public void setUpDriver() {
         driver = new Browser();
+        driver.getDriver().manage().window().fullscreen();
     }
 
     @Test(description = "Test site navigation ")
