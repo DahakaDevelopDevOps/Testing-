@@ -1,15 +1,14 @@
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import webDriver.Browser;
 
 import static webDriver.Browser.driver;
 
 public class MainSynevoPage {
     private static final String MAIN_PAGE_URL = "https://synevo.com.tr/en/";
 
-    @FindBy(xpath = "//a[@class='dropdown-toggle mmItem'][@alt='About Us']")
-    private WebElement navigationButtonToMainInformationPage;
+    @FindBy(xpath = "//div[@class='item']")
+    private WebElement changeLanguageButton;
 
     public MainSynevoPage() {
         PageFactory.initElements(driver, this);
@@ -17,14 +16,13 @@ public class MainSynevoPage {
 
     public MainSynevoPage openPage() {
         driver.get(MAIN_PAGE_URL);
-        driver.manage().window().fullscreen();
         return this;
     }
 
-    public SynevoBranchPage chooseMenuOption() {
+    public MainSynevoPage clickChangeLanguageButton() {
         driver.manage().window().fullscreen();
-        navigationButtonToMainInformationPage.click();
-        return new SynevoBranchPage();
+        changeLanguageButton.click();
+        return this;
     }
 
 

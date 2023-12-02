@@ -1,3 +1,5 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -11,15 +13,15 @@ public class SynevoTest {
     @BeforeMethod(alwaysRun = true)
     public void setUpDriver() {
         driver = new Browser();
-        driver.getDriver().manage().window().fullscreen();
     }
 
-    @Test(description = "Test site navigation ")
-    public void testNavigation() {
+    @Test(description = "Test changing language operation")
+    public void testChangeLanguage() {
         MainSynevoPage page = new MainSynevoPage();
         page.openPage()
-                .chooseMenuOption();
-        Assert.assertEquals(driver.getDriver().getCurrentUrl(), "https://synevo.com.tr/en/Synevo-in-Turkey", "URL is not correct");
+                .clickChangeLanguageButton();
+        Assert.assertEquals(driver.getDriver().getCurrentUrl(), "https://synevo.com.tr/tr/", "URL is not correct");
+
     }
 
     @Test(description = "Test error message when client enter incorrect route")
